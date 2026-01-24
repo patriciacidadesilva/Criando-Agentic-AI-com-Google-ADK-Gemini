@@ -158,25 +158,25 @@ Esta etapa conecta o agente ao Gemini, o LLM subjacente utilizado pelo Google AD
 ### 1️⃣ Criar um projeto no Google Cloud
 
 Acesse o Google Cloud Console:
-### ➡️ Google Cloud Console
+➡️ Google Cloud Console
 https://console.cloud.google.com/welcome/new
 
-No console:
+**No console:**
 1.  Clique em Selecionar projeto → Novo projeto
 2.  Defina o nome do projeto (exemplo):
 ```nginx
 c3po3
 ```
 3. Clique em Criar
-💡 O projeto é necessário para vincular a API Key e aplicar governança básica.
+- 💡 O projeto é necessário para vincular a API Key e aplicar governança básica.
 
 ### 2️⃣ Criar a API Key do Gemini no Google AI Studio
 
 Acesse o Google AI Studio:
-### ➡️ Google AI Studio — API Keys
+➡️ Google AI Studio — API Keys
 https://aistudio.google.com/api-keys
 
-No AI Studio:
+**No AI Studio:**
 
 1. Clique em Criar chave de API
 2. Em Escolher um projeto, selecione o projeto criado (ex.: c3po3)
@@ -188,7 +188,7 @@ A API Key será gerada automaticamente.
 Após a criação:
 * Copie a chave exibida pelo AI Studio
 * Guarde em local seguro
-⚠️ Essa chave dá acesso direto ao Gemini.
+- ⚠️ Essa chave dá acesso direto ao Gemini.
 
 ### 4️⃣ Configurar a chave no projeto (.env)
 
@@ -238,14 +238,14 @@ For local testing, access at http://127.0.0.1:8000
 
 ### 3️⃣ Acessar a interface no navegador
 
-No terminal:
+**No terminal:**
 1. Segure Ctrl
 2. Clique no link http://127.0.0.1:8000
 3. Isso abrirá automaticamente o ADK Web Developer UI no navegador.
 
 ### 4️⃣ Conversar com o agente C-3PO
 
-Na interface web:
+**Na interface web:**
 1. Selecione o app/agente c3po
 2. Digite uma mensagem no chat
 3. Interaja livremente com o agente
@@ -255,6 +255,7 @@ A partir desse ponto, você já está conversando com um agente de IA em execuç
 - Google ADK (Agent Runtime)
 - Gemini como LLM subjacente
 - Interface web para observabilidade e testes
+
 
 **"Tela Inicial da Conversa com o Agente"**
 ![alt text](image.png)
