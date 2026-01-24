@@ -1,4 +1,5 @@
-# 🤖 C-3PO Agent (Google ADK + Gemini) — Dev UI Local
+# 🤖 Criando Agentic AI com Google ADK + Gemini
+
 
 Projeto hands-on para criar um agente (C-3PO) com **Google Agent Development Kit (ADK)** usando **Gemini** como LLM subjacente, rodando localmente e testado via **ADK Web Developer UI**.
 
