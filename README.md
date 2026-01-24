@@ -111,28 +111,28 @@ if __name__ == "__main__":
 
 ### 🧑‍💻 Resumo Operacional do Código
 
-**from google.adk.agents import Agent**
+1. **from google.adk.agents import Agent**
 ➡️ Importa a classe base de agente do Google ADK
 👉 É o “framework” que transforma LLM em agente executável
 
-**root_agent = Agent(...)**
+2. **root_agent = Agent(...)**
 ➡️ Aqui você instancia o agente
 👉 Pense nisso como “registrar um funcionário digital”
 
-**name="c3po"**
+3. **name="c3po"**
 ➡️ Identidade do agente
 👉 Usado para logs, orquestração e multi-agent no futuro
 
-**model="gemini-2.0-flash"**
+4. **model="gemini-2.0-flash"**
 ➡️ LLM que o agente usa
 👉 flash = rápido, barato, ideal para agentes reativos
 👉 Depois você pode trocar por modelos mais “pensantes”
 
-**description="Droid C-3PO do filme Star Wars"**
+5. **description="Droid C-3PO do filme Star Wars"**
 ➡️ Metadado descritivo
 👉 Não guia comportamento, mas ajuda em observabilidade e governança
 
-**instruction=...**
+6. **instruction=...**
 ➡️ Cérebro comportamental do agente
 👉 Define:
 - personalidade
@@ -140,13 +140,13 @@ if __name__ == "__main__":
 - estilo cognitivo
 É o equivalente ao prompt base permanente.
 
-**if __name__ == "__main__":**
+7. **if __name__ == "__main__":**
 ➡️ Padrão Python para execução direta
 👉 Permite rodar:
 python agent.py
 Sem quebrar quando virar módulo maior depois.
 
-**print(...)**
+8. **print(...)**
 ➡️ Apenas validação operacional
 👉 Confirma que:
 - o agente foi instanciado
@@ -168,7 +168,7 @@ https://console.cloud.google.com/welcome/new
 https://aistudio.google.com/api-keys
 
 
-📥 **"Fluxo:"**
+### 📥 **"Fluxo:"**
 
 1. Criar um projeto no Google Cloud (ex.: c3po3)
 2. No AI Studio: Criar chave de API e associar ao projeto
