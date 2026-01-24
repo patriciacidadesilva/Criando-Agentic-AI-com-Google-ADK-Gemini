@@ -168,7 +168,7 @@ https://console.cloud.google.com/welcome/new
 c3po3
 ```
 3. Clique em Criar
-- 💡 O projeto é necessário para vincular a API Key e aplicar governança básica.
+💡 O projeto é necessário para vincular a API Key e aplicar governança básica.
 
 ### 2️⃣ Criar a API Key do Gemini no Google AI Studio
 
@@ -188,7 +188,7 @@ A API Key será gerada automaticamente.
 Após a criação:
 * Copie a chave exibida pelo AI Studio
 * Guarde em local seguro
-- ⚠️ Essa chave dá acesso direto ao Gemini.
+⚠️ Essa chave dá acesso direto ao Gemini.
 
 ### 4️⃣ Configurar a chave no projeto (.env)
 
@@ -251,10 +251,10 @@ For local testing, access at http://127.0.0.1:8000
 3. Interaja livremente com o agente
 
 A partir desse ponto, você já está conversando com um agente de IA em execução local, utilizando:
-
 - Google ADK (Agent Runtime)
 - Gemini como LLM subjacente
 - Interface web para observabilidade e testes
+
 
 
 **"Tela Inicial da Conversa com o Agente"**
