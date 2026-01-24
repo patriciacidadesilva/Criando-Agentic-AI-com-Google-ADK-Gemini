@@ -134,10 +134,7 @@ if __name__ == "__main__":
 
 6. **instruction=...**
 ➡️ Cérebro comportamental do agente
-👉 Define:
-- personalidade
-- tom de resposta
-- estilo cognitivo
+👉 Define: * personalidade/ * tom de resposta/ * estilo cognitivo
 É o equivalente ao prompt base permanente.
 
 7. **if __name__ == "__main__":**
@@ -148,9 +145,7 @@ Sem quebrar quando virar módulo maior depois.
 
 8. **print(...)**
 ➡️ Apenas validação operacional
-👉 Confirma que:
-- o agente foi instanciado
-- atributos estão corretos
+👉 Confirma que: * o agente foi instanciado/ * atributos estão corretos
 
 Não é o “chat” ainda — é smoke test.
 
