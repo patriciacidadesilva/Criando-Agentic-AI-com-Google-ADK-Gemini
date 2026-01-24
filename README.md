@@ -153,45 +153,108 @@ Não é o “chat” ainda — é smoke test.
 ---
 
 ## 🔑 Configurando a API Key (Gemini)
+Esta etapa conecta o agente ao Gemini, o LLM subjacente utilizado pelo Google ADK.
 
-### 1) Criar chave no Google (resumo)
-Links úteis (use no navegador):
+### 1️⃣ Criar um projeto no Google Cloud
 
-➡️**Google Cloud Console:**
+Acesse o Google Cloud Console:
+### ➡️ Google Cloud Console
 https://console.cloud.google.com/welcome/new
 
-➡️**Google AI Studio (API Keys):**
+No console:
+1.  Clique em Selecionar projeto → Novo projeto
+2.  Defina o nome do projeto (exemplo):
+```nginx
+c3po3
+```
+3. Clique em Criar
+💡 O projeto é necessário para vincular a API Key e aplicar governança básica.
+
+### 2️⃣ Criar a API Key do Gemini no Google AI Studio
+
+Acesse o Google AI Studio:
+### ➡️ Google AI Studio — API Keys
 https://aistudio.google.com/api-keys
 
+No AI Studio:
 
-### 📥 **"Fluxo:"**
+1. Clique em Criar chave de API
+2. Em Escolher um projeto, selecione o projeto criado (ex.: c3po3)
+3. Clique em Importar / Criar chave
+A API Key será gerada automaticamente.
 
-1. Criar um projeto no Google Cloud (ex.: c3po3)
-2. No AI Studio: Criar chave de API e associar ao projeto
-3. Copiar a chave gerada
+### 3️⃣ Copiar a API Key
 
-### 2) Colar no .env
-Dentro de c3po/.env
+Após a criação:
+* Copie a chave exibida pelo AI Studio
+* Guarde em local seguro
+⚠️ Essa chave dá acesso direto ao Gemini.
+
+### 4️⃣ Configurar a chave no projeto (.env)
+
+Dentro do projeto, abra o arquivo:
+```text
+c3po/.env
+```
+
+Adicione:
 ```env
 GOOGLE_API_KEY=SUA_CHAVE_AQUI
 ```
-✅ Salvar (Ctrl+S)
-Governança: nunca commitar .env no GitHub.
+Salve o arquivo (Ctrl + S).
+
+### 🔒 Governança e Segurança
+
+❌ Nunca versionar o arquivo .env
+🔁 Se a chave vazar, revogue e gere outra no AI Studio
+🚀 Em produção, prefira variáveis de ambiente ou secret managers
+
 
 ---
 
 ## 🕹️ Rodando o ADK Web UI (Chat com o agente)
-Volte para a raiz do projeto (ADK):
+Nesta etapa, você inicia a interface web do Google ADK para conversar com o agente C-3PO criado anteriormente.
+
+### 1️⃣ Voltar para a raiz do projeto
+
+Certifique-se de estar na pasta raiz do projeto (ADK):
 ```powershell
 cd ..
 ```
+💡 Esse passo é importante: o comando adk web deve ser executado na raiz do projeto, não dentro da pasta do agente (c3po).
 
-Suba a Web UI:
+### 2️⃣ Subir o ADK Web Developer UI
+
+Execute o comando:
 ```powershell
 adk web
 ```
-Depois, abra o link do localhost que aparece no terminal.
-No painel, selecione o app/agente c3po e converse à vontade.
+
+Se tudo estiver correto, o terminal exibirá mensagens semelhantes a:
+```powershell
+ADK Web Server started
+For local testing, access at http://127.0.0.1:8000
+```
+
+### 3️⃣ Acessar a interface no navegador
+
+No terminal:
+1. Segure Ctrl
+2. Clique no link http://127.0.0.1:8000
+3. Isso abrirá automaticamente o ADK Web Developer UI no navegador.
+
+### 4️⃣ Conversar com o agente C-3PO
+
+Na interface web:
+1. Selecione o app/agente c3po
+2. Digite uma mensagem no chat
+3. Interaja livremente com o agente
+
+A partir desse ponto, você já está conversando com um agente de IA em execução local, utilizando:
+
+- Google ADK (Agent Runtime)
+- Gemini como LLM subjacente
+- Interface web para observabilidade e testes
 
 **"Tela Inicial da Conversa com o Agente"**
 ![alt text](image.png)
@@ -202,21 +265,32 @@ No painel, selecione o app/agente c3po e converse à vontade.
 **"Conversa 2"**
 ![alt text](image-2.png)
 
+## 🧠 Observações importantes
+
+- Para encerrar o servidor, volte ao terminal e pressione Ctrl + C
+- Qualquer alteração no código do agente exige reiniciar o adk web
+
+- A UI permite acompanhar sessions, events e traces, facilitando debug e evolução do agente
+
 ---
 
 ## 🗂️ Estrutura do Projeto 
 
 ```text
-ADK/
+Criando-Agentic-AI-com-Google-ADK-Gemini/
 ├─ c3po/
-│  ├─ agent.py
-│  ├─ __init__.py
-│  └─ .env                # NÃO versionar
-├─ .venv/                 # ambiente local (não versionar)
+│  ├─ .adk/               # artefatos internos do Google ADK
+│  ├─ agent.py            # definição do agente raiz (C-3PO)
+│  └─ __init__.py
 ├─ .gitignore
-├─ pyproject.toml
-├─ uv.lock
-└─ README.md
+├─ .python-version        # versão do Python usada no projeto
+├─ main.py                # ponto de entrada auxiliar (opcional)
+├─ pyproject.toml         # configuração do projeto Python
+├─ uv.lock                # lockfile de dependências
+├─ README.md
+├─ image.png              # prints da ADK Web UI
+├─ image-1.png
+└─ image-2.png
 ```
 
 ---
