@@ -116,13 +116,14 @@ if __name__ == "__main__":
 ### 1) Criar chave no Google (resumo)
 Links úteis (use no navegador):
 
-Google Cloud Console:
+**Google Cloud Console:**
 https://console.cloud.google.com/welcome/new
 
-Google AI Studio (API Keys):
+**Google AI Studio (API Keys):**
 https://aistudio.google.com/api-keys
 
-Fluxo:
+
+"Fluxo:"
 
 1. Criar um projeto no Google Cloud (ex.: c3po3)
 
@@ -152,6 +153,15 @@ adk web
 ```
 Depois, abra o link do localhost que aparece no terminal.
 No painel, selecione o app/agente c3po e converse à vontade.
+
+**"Tela Inicial da Conversa com o Agente"**
+![alt text](image.png)
+
+**"Conversa 1"**
+![alt text](image-1.png)
+
+**"Conversa 2"**
+![alt text](image-2.png)
 
 ---
 
