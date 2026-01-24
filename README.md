@@ -109,6 +109,51 @@ if __name__ == "__main__":
     print(f"Descrição: {root_agent.description}")
 ```
 
+### 🧑‍💻 Resumo Operacional do Código
+
+**from google.adk.agents import Agent**
+➡️ Importa a classe base de agente do Google ADK
+👉 É o “framework” que transforma LLM em agente executável
+
+**root_agent = Agent(...)**
+➡️ Aqui você instancia o agente
+👉 Pense nisso como “registrar um funcionário digital”
+
+**name="c3po"**
+➡️ Identidade do agente
+👉 Usado para logs, orquestração e multi-agent no futuro
+
+**model="gemini-2.0-flash"**
+➡️ LLM que o agente usa
+👉 flash = rápido, barato, ideal para agentes reativos
+👉 Depois você pode trocar por modelos mais “pensantes”
+
+**description="Droid C-3PO do filme Star Wars"**
+➡️ Metadado descritivo
+👉 Não guia comportamento, mas ajuda em observabilidade e governança
+
+**instruction=...**
+➡️ Cérebro comportamental do agente
+👉 Define:
+- personalidade
+- tom de resposta
+- estilo cognitivo
+É o equivalente ao prompt base permanente.
+
+**if __name__ == "__main__":**
+➡️ Padrão Python para execução direta
+👉 Permite rodar:
+python agent.py
+Sem quebrar quando virar módulo maior depois.
+
+**print(...)**
+➡️ Apenas validação operacional
+👉 Confirma que:
+- o agente foi instanciado
+- atributos estão corretos
+
+Não é o “chat” ainda — é smoke test.
+
 ---
 
 ## 🔑 Configurando a API Key (Gemini)
@@ -116,19 +161,17 @@ if __name__ == "__main__":
 ### 1) Criar chave no Google (resumo)
 Links úteis (use no navegador):
 
-**Google Cloud Console:**
+➡️**Google Cloud Console:**
 https://console.cloud.google.com/welcome/new
 
-**Google AI Studio (API Keys):**
+➡️**Google AI Studio (API Keys):**
 https://aistudio.google.com/api-keys
 
 
-"Fluxo:"
+📥 **"Fluxo:"**
 
 1. Criar um projeto no Google Cloud (ex.: c3po3)
-
 2. No AI Studio: Criar chave de API e associar ao projeto
-
 3. Copiar a chave gerada
 
 ### 2) Colar no .env
