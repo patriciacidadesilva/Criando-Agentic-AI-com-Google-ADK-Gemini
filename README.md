@@ -235,9 +235,9 @@ GOOGLE_API_KEY=SUA_CHAVE_AQUI
 
 ### 🔒 Governança e Segurança
 
-> ❌ Nunca versionar o arquivo .env
-> 🔁 Se a chave vazar, revogue e gere outra no AI Studio
-> 🚀 Em produção, prefira variáveis de ambiente ou secret managers
+* ❌ Nunca versionar o arquivo .env
+* 🔁 Se a chave vazar, revogue e gere outra no AI Studio
+* 🚀 Em produção, prefira variáveis de ambiente ou secret managers
 
 ---
 
@@ -286,13 +286,13 @@ A partir desse ponto, você já está conversando com um agente de IA em execuç
 
 
 
-**"Tela Inicial da Conversa com o Agente"**
+> **"Tela Inicial da Conversa com o Agente"**
 ![alt text](image.png)
 
-**"Conversa 1"**
+> **"Conversa 1"**
 ![alt text](image-1.png)
 
-**"Conversa 2"**
+> **"Conversa 2"**
 ![alt text](image-2.png)
 
 ---
