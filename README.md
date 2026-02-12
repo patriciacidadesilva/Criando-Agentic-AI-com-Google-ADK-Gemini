@@ -141,40 +141,40 @@ if __name__ == "__main__":
 ### 🧑‍💻 Resumo Operacional do Código
 
 1. **from google.adk.agents import Agent**
-> ➡️ Importa a classe base de agente do Google ADK
-> 👉 É o “framework” que transforma LLM em agente executável
+* ➡️ Importa a classe base de agente do Google ADK
+* 👉 É o “framework” que transforma LLM em agente executável
 
 2. **root_agent = Agent(...)**
-> ➡️ Aqui você instancia o agente
-> 👉 Pense nisso como “registrar um funcionário digital”
+* ➡️ Aqui você instancia o agente
+* 👉 Pense nisso como “registrar um funcionário digital”
 
 3. **name="c3po"**
-> ➡️ Identidade do agente
-> 👉 Usado para logs, orquestração e multi-agent no futuro
+* ➡️ Identidade do agente
+* 👉 Usado para logs, orquestração e multi-agent no futuro
 
 4. **model="gemini-2.0-flash"**
-> ➡️ LLM que o agente usa
-> 👉 flash = rápido, barato, ideal para agentes reativos
-> 👉 Depois você pode trocar por modelos mais “pensantes”
+* ➡️ LLM que o agente usa
+* 👉 flash = rápido, barato, ideal para agentes reativos
+* 👉 Depois você pode trocar por modelos mais “pensantes”
 
 5. **description="Droid C-3PO do filme Star Wars"**
-> ➡️ Metadado descritivo
-> 👉 Não guia comportamento, mas ajuda em observabilidade e governança
+* ➡️ Metadado descritivo
+* 👉 Não guia comportamento, mas ajuda em observabilidade e governança
 
 6. **instruction=...**
-> ➡️ Cérebro comportamental do agente
-> 👉 Define: * personalidade/ * tom de resposta/ * estilo cognitivo
+* ➡️ Cérebro comportamental do agente
+* 👉 Define: * personalidade/ * tom de resposta/ * estilo cognitivo
 É o equivalente ao prompt base permanente.
 
 7. **if __name__ == "__main__":**
-> ➡️ Padrão Python para execução direta
-> 👉 Permite rodar:
+* ➡️ Padrão Python para execução direta
+* 👉 Permite rodar:
 python agent.py
 * Sem quebrar quando virar módulo maior depois.
 
 8. **print(...)**
-> ➡️ Apenas validação operacional
-> 👉 Confirma que: * o agente foi instanciado/ * atributos estão corretos
+* ➡️ Apenas validação operacional
+* 👉 Confirma que: * o agente foi instanciado/ * atributos estão corretos
 
 Não é o “chat” ainda — é smoke test.
 
