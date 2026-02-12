@@ -190,8 +190,9 @@ Esta etapa conecta o agente ao Gemini, o LLM subjacente utilizado pelo Google AD
 https://console.cloud.google.com/welcome/new
 
 **No console:**
-**1.**  Clique em Selecionar projeto → Novo projeto
-**2.**  Defina o nome do projeto (exemplo):
+- **1.**  Clique em Selecionar projeto → Novo projeto
+
+- **2.**  Defina o nome do projeto (exemplo):
 ```nginx
 c3po3
 ```
