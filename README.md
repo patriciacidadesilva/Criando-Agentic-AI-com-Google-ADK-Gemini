@@ -196,8 +196,11 @@ https://console.cloud.google.com/welcome/new
 ```nginx
 c3po3
 ```
-**3.** Clique em Criar
+
+- **3.** Clique em Criar
 > 💡 O projeto é necessário para vincular a API Key e aplicar governança básica.
+
+---
 
 ### 2️⃣ Criar a API Key do Gemini no Google AI Studio
 
@@ -212,12 +215,16 @@ https://aistudio.google.com/api-keys
 3. Clique em Importar / Criar chave
 > A API Key será gerada automaticamente.
 
+---
+
 ### 3️⃣ Copiar a API Key
 
 Após a criação:
 * Copie a chave exibida pelo AI Studio
 * Guarde em local seguro
 > ⚠️ Essa chave dá acesso direto ao Gemini.
+
+---
 
 ### 4️⃣ Configurar a chave no projeto (.env)
 
