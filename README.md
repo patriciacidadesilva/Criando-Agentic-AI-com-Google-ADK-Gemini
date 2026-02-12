@@ -31,15 +31,20 @@
 - Subir a **Dev UI do ADK** (`adk web`) para conversar com o agente em localhost
 - Estruturar o projeto no VS Code com ambiente virtual e dependências isoladas
 
+---  
+
 ## 🧠 Arquitetura (High Level)
 **Usuário** → **ADK Web Developer UI** → **Google ADK** → **Gemini** (gemini-2.0-flash)
 
+---
 
 ## ✅ Pré-requisitos
 - Windows + PowerShell (ou Git Bash)
 - Python instalado (recomendado 3.10+)
 - VS Code
 - Acesso a uma **API Key do Gemini**
+
+---
 
 ## 📦 Stack
 - `google-adk`
@@ -49,6 +54,7 @@
 - `venv`
 
 ---
+
 ## 🚀 Setup do Projeto (Passo a Passo)
 
 ### 1) Criar pasta e abrir no VS Code
@@ -225,12 +231,13 @@ GOOGLE_API_KEY=SUA_CHAVE_AQUI
 ```
 > Salve o arquivo (Ctrl + S).
 
+--- 
+
 ### 🔒 Governança e Segurança
 
 > ❌ Nunca versionar o arquivo .env
 > 🔁 Se a chave vazar, revogue e gere outra no AI Studio
 > 🚀 Em produção, prefira variáveis de ambiente ou secret managers
-
 
 ---
 
@@ -287,6 +294,8 @@ A partir desse ponto, você já está conversando com um agente de IA em execuç
 
 **"Conversa 2"**
 ![alt text](image-2.png)
+
+---
 
 ## 🧠 Observações importantes
 
