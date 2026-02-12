@@ -140,39 +140,39 @@ if __name__ == "__main__":
 
 ### 🧑‍💻 Resumo Operacional do Código
 
-1. **from google.adk.agents import Agent**
+**1. from google.adk.agents import Agent**
 * ➡️ Importa a classe base de agente do Google ADK
 * 👉 É o “framework” que transforma LLM em agente executável
 
-2. **root_agent = Agent(...)**
+**2. root_agent = Agent(...)**
 * ➡️ Aqui você instancia o agente
 * 👉 Pense nisso como “registrar um funcionário digital”
 
-3. **name="c3po"**
+**3. name="c3po"**
 * ➡️ Identidade do agente
 * 👉 Usado para logs, orquestração e multi-agent no futuro
 
-4. **model="gemini-2.0-flash"**
+**4. model="gemini-2.0-flash"**
 * ➡️ LLM que o agente usa
 * 👉 flash = rápido, barato, ideal para agentes reativos
 * 👉 Depois você pode trocar por modelos mais “pensantes”
 
-5. **description="Droid C-3PO do filme Star Wars"**
+**5. description="Droid C-3PO do filme Star Wars"**
 * ➡️ Metadado descritivo
 * 👉 Não guia comportamento, mas ajuda em observabilidade e governança
 
-6. **instruction=...**
+**6. instruction=...**
 * ➡️ Cérebro comportamental do agente
 * 👉 Define: * personalidade/ * tom de resposta/ * estilo cognitivo
 É o equivalente ao prompt base permanente.
 
-7. **if __name__ == "__main__":**
+**7. if __name__ == "__main__":**
 * ➡️ Padrão Python para execução direta
 * 👉 Permite rodar:
 python agent.py
 * Sem quebrar quando virar módulo maior depois.
 
-8. **print(...)**
+**8. print(...)**
 * ➡️ Apenas validação operacional
 * 👉 Confirma que: * o agente foi instanciado/ * atributos estão corretos
 
@@ -186,22 +186,22 @@ Esta etapa conecta o agente ao Gemini, o LLM subjacente utilizado pelo Google AD
 ### 1️⃣ Criar um projeto no Google Cloud
 
 * Acesse o Google Cloud Console:
-➡️ Google Cloud Console
+> ➡️ Google Cloud Console
 https://console.cloud.google.com/welcome/new
 
 **No console:**
-1.  Clique em Selecionar projeto → Novo projeto
-2.  Defina o nome do projeto (exemplo):
+**1.**  Clique em Selecionar projeto → Novo projeto
+**2.**  Defina o nome do projeto (exemplo):
 ```nginx
 c3po3
 ```
-3. Clique em Criar
+**3.** Clique em Criar
 > 💡 O projeto é necessário para vincular a API Key e aplicar governança básica.
 
 ### 2️⃣ Criar a API Key do Gemini no Google AI Studio
 
 * Acesse o Google AI Studio:
-➡️ Google AI Studio — API Keys
+> ➡️ Google AI Studio — API Keys
 https://aistudio.google.com/api-keys
 
 **No AI Studio:**
